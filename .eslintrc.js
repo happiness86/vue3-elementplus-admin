@@ -24,7 +24,8 @@ module.exports = {
     'vue/attributes-order': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     'vue/require-default-prop': 'off',
-    'no-debugger': 'off'
+    'no-debugger': 'off',
+    'vue/multi-word-component-names': 'off'
   },
   globals: {
     // setup中编译宏，为避免eslint报错，暂时办法
