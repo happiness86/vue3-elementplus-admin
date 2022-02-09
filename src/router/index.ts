@@ -1,9 +1,13 @@
-import {createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { constantRoutes } from './constant'
+import { permissionRoutes } from './permissionRoutes'
 
-export const router = createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes: [
-    ...constantRoutes
+    ...constantRoutes,
+    ...permissionRoutes
   ],
 })
+
+export default router

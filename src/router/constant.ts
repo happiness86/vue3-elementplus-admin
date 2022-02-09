@@ -1,12 +1,16 @@
-import {RouteRecordRaw, RouterView } from 'vue-router';
+import { RouteRecordRaw, RouterView } from 'vue-router'
 
 export const constantRoutes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    redirect: '/dashboard'
+  },
   {
     path: '/404',
     component: () => RouterView
   },
   {
     path: '/login',
-    component: () => RouterView
+    component: () => import('@/views/Login/Login.vue')
   }
 ]
